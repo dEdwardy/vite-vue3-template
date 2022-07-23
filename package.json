@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --mode prod",
     "build:test": "vite build --mode test",
-    "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./src",
+    "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet .",
     "postinstall": "husky install",
     "preview": "vite preview"
   },

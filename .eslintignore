@@ -1,0 +1,6 @@
+node_modules
+dist
+public
+index.html
+auto-imports.d.ts
+components.d.ts

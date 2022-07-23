@@ -17,6 +17,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
+      '@images': resolve(__dirname, 'src/assets/images'),
       vue$: 'vue/dist/vue.esm.js'
     }
   },
@@ -77,6 +78,22 @@ export default defineConfig({
   ],
   build: {
     outDir: 'dist', // 指定打包路径，默认为项目根目录下的 dist 目录
-    chunkSizeWarningLimit: 1500 // chunk 大小警告的限制（以 kbs 为单位）
+    chunkSizeWarningLimit: 1500, // chunk 大小警告的限制（以 kbs 为单位）
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vue-vendor': [
+            'vue',
+            'vue-router',
+            'pinia',
+            'pinia-plugin-persistedstate',
+            'vue-i18n',
+            '@vueuse/core'
+          ],
+          'element-plus': ['element-plus'],
+          echarts: ['echarts']
+        }
+      }
+    }
   }
 });
