@@ -9,7 +9,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 commitlint
 // type 指提交的类型
 // subject 指提交的摘要信息
-<type>: <subject>
+<type>: <subject>  :后有1个空格
 常用的 type 值包括如下:
 
 feat: 添加新功能。
