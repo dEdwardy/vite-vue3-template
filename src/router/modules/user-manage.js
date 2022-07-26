@@ -9,4 +9,9 @@ export default [
     component: () => import('@/views/UserManage/UserDetail.vue'),
     name: 'user-detail'
   }
+  // {
+  //   path: 'grid-layout',
+  //   component: () => import('@/views/UserManage/GridLayout.vue'),
+  //   name: 'grid-layout'
+  // }
 ];
